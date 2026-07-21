@@ -95,6 +95,18 @@ nav {
 
 /* Hero Section */
 
+.hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+
+
 
 .hero-content h1 {
     font-size: 2.5rem;
@@ -369,3 +381,53 @@ footer {
 
 
 
+
+
+/* Product Page Hero Sections */
+.products-t-shirts .hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/tshirt-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.products-mugs .hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/mug-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.products-pillows .hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/pillow-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.products-blankets .hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/blanket-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* Blog Hero Section */
+.blog .hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/blog-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Guides Hero Section */
+.guides .hero {
+    background: linear-gradient(135deg, rgba(74, 111, 165, 0.8), rgba(107, 140, 188, 0.8)), url('../images/guides-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
