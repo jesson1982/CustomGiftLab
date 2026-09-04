@@ -618,3 +618,82 @@ table.data-table tr:nth-child(even) td, .content-table tr:nth-child(even) td {
 .testimonial:before {
   content: "\201C";
 }
+
+
+/* ===== Index grids: blog + guides (layout fix) ===== */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+.blog-grid .blog-post {
+  border: 1px solid var(--kad-border);
+  border-radius: var(--kad-radius);
+  box-shadow: var(--kad-shadow);
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.blog-grid .blog-post:hover {
+  box-shadow: var(--kad-shadow-hover);
+  transform: translateY(-2px);
+}
+.blog-grid .blog-post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.blog-grid .blog-post h2 {
+  font-size: 1.12rem;
+  line-height: 1.35;
+  margin: 1rem 1.1rem .55rem;
+}
+.blog-grid .blog-post h2 a {
+  color: var(--kad-ink, #1f2933);
+  text-decoration: none;
+}
+.blog-grid .blog-post h2 a:hover { color: #4a6fa5; }
+.blog-grid .blog-post p:not(.post-meta) {
+  font-size: .92rem;
+  color: #4b5563;
+  margin: 0 1.1rem .8rem;
+  flex: 1;
+}
+.post-meta {
+  margin: 0 1.1rem 1.1rem;
+  font-size: .82rem;
+  color: #6b7280;
+}
+@media (max-width: 992px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+.guide-card {
+  border: 1px solid var(--kad-border);
+  border-radius: var(--kad-radius);
+  box-shadow: var(--kad-shadow);
+  background: #fff;
+  padding: 1.4rem 1.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.guide-card:hover {
+  box-shadow: var(--kad-shadow-hover);
+  transform: translateY(-2px);
+}
+.guide-card h2 { font-size: 1.15rem; margin: 0 0 .6rem; }
+.guide-card h2 a { color: var(--kad-ink, #1f2933); text-decoration: none; }
+.guide-card h2 a:hover { color: #4a6fa5; }
+.guide-card p { font-size: .92rem; color: #4b5563; flex: 1; margin: 0 0 1rem; }
+@media (max-width: 992px) { .guides-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .guides-grid { grid-template-columns: 1fr; } }
